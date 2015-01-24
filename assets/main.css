@@ -1,0 +1,135 @@
+/* typography */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+/* shared */
+section,nav,#submit {
+	font-family:montserrat,gotham,helvetica neue,sans-serif!important;
+}
+nav a,input,#submit {
+	-webkit-transition:all .1s ease;
+	transition:all .1s ease;
+}
+section div,main,input,#submit {
+	box-sizing:border-box;
+}
+
+/* layout */
+body {
+	margin:0;
+	font-family:roboto slab,serif;
+}
+section {
+	font-weight:bold;
+}
+section div {
+	padding:.4em .6em;
+	font-size:50pt;
+	color:#fff;
+}
+section div:nth-child(1) {
+	background:#2a288d;
+}
+section div:nth-child(2) {
+	background:#18882e;
+}
+section div:nth-child(3) {
+	background:#b11e1e;
+}
+section div:nth-child(4) {
+	padding:.4em 1.2em;
+	background:#111;
+	font-size:25pt;
+}
+section span {
+	font-family:roboto slab,serif;
+	font-style:italic;
+	font-size:60%;
+}
+section a {
+	margin:.6em 0;
+	float:right;
+	font-size:11pt;
+	color:inherit;
+	text-decoration:none;
+	border-bottom:1px solid;
+}
+nav {
+	position:fixed;
+	right:0;
+	bottom:0;
+	left:0;
+	height:39px;
+	background:#eee;
+	border:1px solid #bbb;
+	border-width:1px 0 0 0;
+}
+nav a {
+	display:inline-block;
+	padding:8px;
+	width:calc(3.8% - 17px);
+	color:#111;
+	text-decoration:none;
+	font-size:120%;
+	border:inherit;
+	border-width:0 0 0 1px;
+}
+nav a:hover {
+	background:#ddd;
+}
+nav a:first-child {
+	border:none;
+}
+main {
+	padding:1em 2.5em calc(1em + 39px);
+	font-size:12pt;
+	width:70%;
+	max-width:1200px;
+	min-width:300px;
+	line-height:150%;
+}
+blockquote {
+	margin:0 0 1em;
+	font-size:120%;
+	font-style:italic;
+}
+input,#submit {
+	display:block;
+	margin:0 0 1em;
+	padding:1em;
+	width:100%;
+	background:#ddd;
+	border:1px solid #bbb;
+	color:#111;
+	font-size:inherit;
+	font-family:inherit;
+	-webkit-appearance:none;
+}
+input:hover,#submit:hover {
+	background:#eee;
+}
+input:focus,#submit:focus {
+	background:#fff;
+	outline:none;
+}
+input:first-child {
+	width:33%;
+}
+#submit {
+	width:20%;
+	min-width:100px;
+	position:relative;
+	top:0;
+	left:0;
+	text-align:center;
+	color:inherit;
+	background:#eee;
+	border-color:#bbb;
+	box-shadow:4px 4px 0 #bbb;
+	text-decoration:none;
+}
+#submit:active {
+	top:2px;
+	left:2px;
+	box-shadow:2px 2px 0 #bbb;
+}
